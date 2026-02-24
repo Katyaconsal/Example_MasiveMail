@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es" id="html-lang">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Showcase - Full Detail</title>
+    <style>
+        body { margin: 0; padding: 0; background-color: #f4f4f4; font-family: Arial, sans-serif; }
+        .card-container { background-color: #ffffff; border: 2px solid #000000; max-width: 550px; width: 100%; margin-top: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .btn-buy { background-color: #660033; color: #ffffff !important; padding: 14px 35px; text-decoration: none; font-weight: bold; display: inline-block; border-radius: 4px; font-size: 16px; }
+        .lang-switcher { text-align: center; margin-top: 20px; }
+        .lang-btn { cursor: pointer; padding: 8px 15px; background: white; border: 1px solid #660033; color: #660033; border-radius: 20px; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <div class="lang-switcher">
+        <button class="lang-btn" onclick="translateTo('es')">Español</button>
+        <button class="lang-btn" onclick="translateTo('en')">English</button>
+    </div>
+
+    <center>
+        <table role="presentation" class="card-container" cellspacing="0" cellpadding="0" border="0">
+            
+            <tr>
+                <td align="right" style="padding: 15px;">
+                    <span style="background-color: #cc0000; color: white; padding: 5px 12px; font-size: 12px; font-weight: bold;" id="brand-tag">MARCA</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="padding: 10px 40px;">
+                    <h1 style="color: #660033; margin: 0; font-size: 32px; font-weight: 900;" id="main-title">Rendimiento inteligente</h1>
+                    <h2 style="color: #e65100; margin: 0; font-size: 24px; font-weight: bold;" id="sub-title">para cada día</h2>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="padding: 30px 40px;">
+                    <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                        <tr>
+                            <td width="50%" valign="top">
+                                <p style="margin: 0; font-size: 16px; color: #333;"><span id="lbl-proc">Procesador</span> <strong>Intel® Core™ i5</strong></p>
+                                <p style="margin: 5px 0; font-size: 15px; color: #666;">Windows 11 Pro</p>
+                                
+                                <h3 style="color: #e65100; margin-top: 35px; font-size: 22px; line-height: 1.2;" id="model-text">
+                                    Laptop Genérica<br>V14 G4 IRU
+                                </h3>
+                            </td>
+                            <td width="50%" align="center">
+                                <img src="imagen-05.png" alt="Laptop" width="220" style="display: block; width: 100%; max-width: 220px; height: auto;">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center" style="padding: 10px 40px;">
+                    <p style="margin: 0; color: #888; font-size: 12px; letter-spacing: 1px;">SKU-LOREM-99X</p>
+                    <div style="font-size: 42px; color: #1a1a1a; font-weight: 900; margin: 10px 0;">
+                        $ 6,202.47 <span style="font-size: 18px; font-weight: normal; color: #666;">+ IVA</span>
+                    </div>
+                    
+                    <div style="margin: 15px 0;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Windows_logo_-_2021.svg/512px-Windows_logo_-_2021.svg.png" width="100" alt="Windows 11">
+                    </div>
+
+                    <a href="#" class="btn-buy" id="btn-text">Comprar producto</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="padding: 35px 40px; border-top: 1px dashed #cccccc; background-color: #ffffff;">
+                    <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                        <tr>
+                            <td>
+                                <p style="font-size: 22px; font-weight: 900; margin: 0 0 15px 0; color: #000;">LOGO</p>
+                                
+                                <table cellspacing="0" cellpadding="0" border="0" style="font-size: 13px; color: #333; line-height: 1.8;">
+                                    <tr>
+                                        <td style="color: #cc0000; padding-right: 10px;">●</td>
+                                        <td id="foot-q">Cualquier duda o aclaración, comunícate al: <strong>55 0000 0000</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="color: #cc0000; padding-right: 10px;">●</td>
+                                        <td><strong>Nombre de Contacto</strong> Ext. 0000</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="color: #cc0000; padding-right: 10px;">●</td>
+                                        <td id="foot-mail">Correo electrónico: <span style="color: #cc0000; font-weight: bold;">contacto@ejemplo.com.mx</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="color: #cc0000; padding-right: 10px;">●</td>
+                                        <td id="foot-disclaimer">Precio y disponibilidad sujetos a cambios sin previo aviso.</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </center>
+
+    <script>
+        function translateTo(lang) {
+            const t = {
+                es: {
+                    title: "Rendimiento inteligente",
+                    sub: "para cada día",
+                    proc: "Procesador",
+                    model: "Laptop Genérica<br>V14 G4 IRU",
+                    btn: "Comprar producto",
+                    q: "Cualquier duda o aclaración, comunícate al: <strong>55 0000 0000</strong>",
+                    discl: "Precio y disponibilidad sujetos a cambios sin previo aviso.",
+                    mail: "Correo electrónico: <span style='color: #cc0000; font-weight: bold;'>contacto@ejemplo.com.mx</span>"
+                },
+                en: {
+                    title: "Smart performance",
+                    sub: "for every day",
+                    proc: "Processor",
+                    model: "Generic Laptop<br>V14 G4 IRU",
+                    btn: "Shop product",
+                    q: "Any questions or concerns, call us at: <strong>55 0000 0000</strong>",
+                    discl: "Price and availability subject to change without notice.",
+                    mail: "Email address: <span style='color: #cc0000; font-weight: bold;'>contact@example.com.mx</span>"
+                }
+            };
+
+            const data = t[lang];
+            document.getElementById('html-lang').lang = lang;
+            document.getElementById('main-title').innerText = data.title;
+            document.getElementById('sub-title').innerText = data.sub;
+            document.getElementById('lbl-proc').innerText = data.proc;
+            document.getElementById('model-text').innerHTML = data.model;
+            document.getElementById('btn-text').innerText = data.btn;
+            document.getElementById('foot-q').innerHTML = data.q;
+            document.getElementById('foot-disclaimer').innerText = data.discl;
+            document.getElementById('foot-mail').innerHTML = data.mail;
+        }
+    </script>
+</body>
+</html>
